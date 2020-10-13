@@ -54,23 +54,21 @@ Optionally, to enable on-the-fly conversion from one ebook format to another whe
 
 [Download and install](https://calibre-ebook.com/download) the Calibre desktop program for your platform and enter the folder including program name (normally /opt/calibre/ebook-convert, or C:\Program Files\calibre\ebook-convert.exe) in the field "calibre's converter tool" on the setup page.
 
-\*** DEPRECATED \*** Support will be removed in future releases
-
-[Download](http://www.amazon.com/gp/feature.html?docId=1000765211) Amazon's KindleGen tool for your platform and place the binary named `kindlegen` in the `vendor` folder.
+[Download](https://github.com/geek1011/kepubify/releases/tag/v3.1.2) Kepubify tool for your platform and place the binary starting with `kepubify` in Linux: `\opt\kepubify` Windows: `C:\Program Files\kepubify`.
 
 ## Docker Images
 
 Pre-built Docker images are available in these Docker Hub repositories:
 
 #### **Technosoft2000 - x64**
-+ Docker Hub - [https://hub.docker.com/r/technosoft2000/calibre-web/](https://hub.docker.com/r/technosoft2000/calibre-web/)
++ Docker Hub - [https://hub.docker.com/r/technosoft2000/calibre-web](https://hub.docker.com/r/technosoft2000/calibre-web)
 + Github - [https://github.com/Technosoft2000/docker-calibre-web](https://github.com/Technosoft2000/docker-calibre-web) 
 
     Includes the Calibre `ebook-convert` binary.
     + The "path to convertertool" should be set to `/opt/calibre/ebook-convert`
 
 #### **LinuxServer - x64, armhf, aarch64**
-+ Docker Hub - [https://hub.docker.com/r/linuxserver/calibre-web/](https://hub.docker.com/r/linuxserver/calibre-web/)
++ Docker Hub - [https://hub.docker.com/r/linuxserver/calibre-web](https://hub.docker.com/r/linuxserver/calibre-web)
 + Github - [https://github.com/linuxserver/docker-calibre-web](https://github.com/linuxserver/docker-calibre-web)
 + Github - (Optional Calibre layer) - [https://github.com/linuxserver/docker-calibre-web/tree/calibre](https://github.com/linuxserver/docker-calibre-web/tree/calibre) 
 
@@ -85,3 +83,7 @@ Pre-built Docker images are available in these Docker Hub repositories:
 # Wiki
 
 For further information, How To's and FAQ please check the [Wiki](https://github.com/janeczku/calibre-web/wiki)
+
+# Contributing to Calibre-Web
+
+Please have a look at our [Contributing Guidelines](https://github.com/janeczku/calibre-web/blob/master/CONTRIBUTING.md) 

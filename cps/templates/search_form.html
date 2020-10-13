@@ -1,7 +1,8 @@
 {% extends "layout.html" %}
 {% block body %}
+<h1 class="{{page}}">{{title}}</h1>
 <div class="col-md-10 col-lg-6">
-  <form role="form" id="search" action="{{ url_for('web.advanced_search') }}" method="GET">
+  <form role="form" id="search" action="{{ url_for('web.advanced_search_form') }}" method="POST">
     <div class="form-group">
       <label for="book_title">{{_('Book Title')}}</label>
       <input type="text" class="form-control" name="book_title" id="book_title" value="">
@@ -165,7 +166,7 @@
         {% endif %}
 
         {% if c.datatype == 'rating' %}
-          <input type="number" min="1" max="5" step="1" class="form-control" name="{{ 'custom_column_' ~ c.id }}" id="{{ 'custom_column_' ~ c.id }}">
+          <input type="number" min="1" max="5" step="0.5" class="form-control" name="{{ 'custom_column_' ~ c.id }}" id="{{ 'custom_column_' ~ c.id }}">
         {% endif %}
         </div>
       {% endfor %}
